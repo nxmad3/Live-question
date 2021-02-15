@@ -6,6 +6,8 @@
     <title>euuuuuuuuuuh</title>
 </head>
 <body>
-    
+    <?php
+        echo "mdr"
+    ?>
 </body>
 </html>
