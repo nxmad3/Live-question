@@ -1,0 +1,13 @@
+.nav-acceuil{
+    background-color : #1A2D34;
+}
+
+.connection{
+    background-color: #ED008C;
+    border-radius: 35px !important;
+}
+
+#navbarNavDropdown{
+    display: block !important;
+    float: right;
+}
