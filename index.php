@@ -6,6 +6,14 @@
     <title>acceuiDl</title>
 </head>
 <body>
-zqesrdtfyguhijoyhtgrfergty
+<div class="FAQ">
+    <p>FAQ</p>
+</div>
+
+<div class="text"
+     <p>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+         Vestibulum suscipit at nisi vel tincidunt.
+         Maecenas scelerisque tortor a mauris commodo pulvinar.</p>
 </body>
 </html>
