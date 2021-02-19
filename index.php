@@ -123,11 +123,11 @@
     </div>
     <div>
         <p>
-            <a class="btn btn-primary" data-bs-toggle="collapse" href="#lien1" role="button" aria-expanded="false"
+            <a class="btn btnPink" data-bs-toggle="collapse" href="#lien1" role="button" aria-expanded="false"
                aria-controls="multiCollapseExample1">Lien1</a>
-            <a class="btn btn-primary" data-bs-toggle="collapse" href="#lien2" role="button" aria-expanded="false"
+            <a class="btn btnPink" data-bs-toggle="collapse" href="#lien2" role="button" aria-expanded="false"
                aria-controls="multiCollapseExample2">Lien2</a>
-            <a class="btn btn-primary" data-bs-toggle="collapse" href="#lien3" role="button" aria-expanded="false"
+            <a class="btn btnPink" data-bs-toggle="collapse" href="#lien3" role="button" aria-expanded="false"
                aria-controls="multiCollapseExample2">Lien3</a>
         </p>
         <div class="row">
@@ -144,15 +144,10 @@
                                     doloremque
                                     laudantium totam rem aperiam eaque ipsa</p>
                                 <div class="card">
-                                    <div class="card-header">
-                                        Quote
-                                    </div>
                                     <div class="card-body">
                                         <blockquote class="blockquote mb-0">
-                                            <p>A well-known quote, contained in a blockquote element.</p>
-                                            <footer class="blockquote-footer">Someone famous in <cite
-                                                        title="Source Title">Source
-                                                    Title</cite></footer>
+                                            <p><img class="profileAcceuil" src="./images/persona3.jpg">"Proin vel dolor
+                                                dictum, congue tellus at, lobortis neque"</p>
                                         </blockquote>
                                     </div>
                                 </div>
@@ -175,10 +170,8 @@
                                         </div>
                                         <div class="card-body">
                                             <blockquote class="blockquote mb-0">
-                                                <p>A well-known quote, contained in a blockquote element.</p>
-                                                <footer class="blockquote-footer">Someone famous in <cite
-                                                            title="Source Title">Source
-                                                        Title</cite></footer>
+                                                <p><img class="profileAcceuil" src="./images/persona2.jpg">"Proin vel dolor
+                                                    dictum, congue tellus at, lobortis neque"</p>
                                             </blockquote>
                                         </div>
                                     </div>
@@ -205,10 +198,8 @@
                                         </div>
                                         <div class="card-body">
                                             <blockquote class="blockquote mb-0">
-                                                <p>A well-known quote, contained in a blockquote element.</p>
-                                                <footer class="blockquote-footer">Someone famous in <cite
-                                                            title="Source Title">Source
-                                                        Title</cite></footer>
+                                                <p><img class="profileAcceuil" src="./images/persona1.jpg">"Proin vel dolor
+                                                    dictum, congue tellus at, lobortis neque"</p>
                                             </blockquote>
                                         </div>
                                     </div>

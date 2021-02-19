@@ -4,6 +4,7 @@ body {
 
 .nav-acceuil {
     background-color: #1A2D34;
+
 }
 
 .btnPink {
@@ -45,4 +46,13 @@ body {
 }
 .info2{
     text-align: center;
+}
+
+.btnPink{
+    background-color: #ED008C !important;
+}
+
+.profileAcceuil{
+    width: 8%;
+    border-radius: 100%;
 }
