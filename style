@@ -31,14 +31,14 @@
     margin-left: 5%;
     margin-top: 3%;
     background-color: white;
-    width: 17%;
+    width: 19%;
     float: left;
 }
 
-.marque2 p {
-    margin-left: 8%;
-    margin-top: 2%;
+.respon_mar p {
+    margin-left: 5%;
+    margin-top: 3%;
     background-color: white;
-    width: 21%;
+    width: 19%;
     float: left;
 }
