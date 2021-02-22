@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+}
+
+.nav-acceuil {
+    background-color: #1A2D34;
+
+}
+
+.btnPink {
+    background-color: #ED008C;
+    border-radius: 35px !important;
+}
+
+#navbarNavDropdown {
+    display: block !important;
+    float: right;
+}
+
+.acceuil {
+    background-color: #1A2D34;
+    height: 50ex;
+}
+
+.acceuil .description {
+    color: white;
+}
+
+.acceuil img {
+    width: 100%;
+}
+
+.acceuil .row {
+    padding-left: 17%;
+}
+
+.blocInfo {
+    margin: 8%;
+    height: 24ex;
+}
+
+.info {
+    float: left;
+    width: 32%;
+    padding-left: 3%;
+}
+.info2{
+    text-align: center;
+}
+
+.btnPink{
+    background-color: #ED008C !important;
+}
+
+.profileAcceuil{
+    width: 8%;
+    border-radius: 100%;
+}
