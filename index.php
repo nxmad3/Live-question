@@ -70,7 +70,7 @@
     </div>
 </nav>
 <div class="acceuil">
-    <div class="container">
+    <div class="container posAcceuil">
         <div class="row align-items-start">
             <div class="col-5 description">
                 <h2>
@@ -129,7 +129,7 @@
             <a class="btn btnPink" data-bs-toggle="collapse" href="#lien3" role="button" aria-expanded="false"
                aria-controls="multiCollapseExample2">Lien3</a>
         </p>
-        <div class="row">
+        <div class="row ecran">
             <div class="col">
                 <div class="collapse multi-collapse" id="lien1">
                     <div class="container">
@@ -150,6 +150,94 @@
                                         </blockquote>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="lien2">
+                        <div class="container">
+                            <div class="row align-items-start">
+                                <div class="col">
+                                    <h4>Praesent vitae velit tristique old alos</h4>
+                                    <p>Ned ut persopiciatis unde omnis iste natus error sit voluptatem accusantium
+                                        doloremque
+                                        laudantium totam rem aperiam eaque ipsa</p>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            Quote
+                                        </div>
+                                        <div class="card-body">
+                                            <blockquote class="blockquote mb-0">
+                                                <p><img class="profileAcceuil" src="./images/persona2.jpg">"Proin vel
+                                                    dolor
+                                                    dictum, congue tellus at, lobortis neque"</p>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <img src="./images/step-1.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="lien3">
+                        <div class="container">
+                            <div class="row align-items-start">
+                                <div class="col">
+                                    <img src="./images/step-1.png">
+                                </div>
+                                <div class="col">
+                                    <h4>Praesent vitae velit tristique old alos</h4>
+                                    <p>Ned ut persopiciatis unde omnis iste natus error sit voluptatem accusantium
+                                        doloremque
+                                        laudantium totam rem aperiam eaque ipsa</p>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            Quote
+                                        </div>
+                                        <div class="card-body">
+                                            <blockquote class="blockquote mb-0">
+                                                <p><img class="profileAcceuil" src="./images/persona1.jpg">"Proin vel
+                                                    dolor
+                                                    dictum, congue tellus at, lobortis neque"</p>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile version -->
+        <div class="row mobile">
+            <div class="col">
+                <div class="collapse multi-collapse" id="lien1">
+                    <div class="container">
+                        <div class="row align-items-start">
+                            <div class="col">
+                                <h4>Praesent vitae velit tristique old alos</h4>
+                                <p>Ned ut persopiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque
+                                    laudantium totam rem aperiam eaque ipsa</p>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <blockquote class="blockquote mb-0">
+                                            <p><img class="profileAcceuil" src="./images/persona3.jpg">"Proin vel dolor
+                                                dictum, congue tellus at, lobortis neque"</p>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img src="./images/step-1.png">
                             </div>
                         </div>
                     </div>
@@ -215,6 +303,7 @@
             </div>
         </div>
     </div>
+</div>
     <div class="video">
         <h3><img src="./images/iplay.png" align="middle">"Nulla venenatis magna fringilla"</h3>
     </div>

@@ -10,16 +10,22 @@ body {
 .btnPink {
     background-color: #ED008C;
     border-radius: 35px !important;
+    color: white;
 }
 
 #navbarNavDropdown {
-    display: block !important;
     float: right;
 }
 
 .acceuil {
     background-color: #1A2D34;
     height: 50ex;
+    height: 91ex;
+    border-bottom-right-radius: 200% 75%;
+    border-bottom-left-radius: 200% 75%;
+}
+.posAcceuil{
+    padding-top: 9%;
 }
 
 .acceuil .description {
@@ -46,10 +52,6 @@ body {
 }
 .info2{
     text-align: center;
-}
-
-.btnPink{
-    background-color: #ED008C !important;
 }
 
 .profileAcceuil{
@@ -210,4 +212,69 @@ li {
     width: 370px;
     height: 30px;
     padding-top: 15px;
+}
+.mobile{
+    display : none;
+}
+@media (max-width: 900px){
+    .col-5 {
+        flex: none;
+        width: 100%;
+    }
+    .acceuil .row {
+        padding-left: 0%;
+    }
+    .acceuil{
+        text-align: center;
+    }
+    .info{
+        width: 91%;
+        padding-left: 9%;
+    }
+    .blocInfo{
+        height: 55ex;
+    }
+    .btnPink{
+        border-radius: 0px !important;
+    }
+    .video h3 {
+        padding-top: 43%;
+    }
+    .info2 img{
+        width: 100%;
+    }
+    .info2 .col {
+        flex: none;
+    }
+    .blockquote p{
+        font-size: 57%;
+    }
+    .blockquote img{
+        width: 13%;
+    }
+    .mobile{
+        display: block;
+    }
+    .ecran{
+        display: none;
+    }
+    .info2{
+        margin-bottom: 6%;
+    }
+
+    .marque p{
+        width: 26%;
+    }
+    .respon_mar p {
+        margin-left: 36%;
+    }
+    .footer p {
+        padding-left : 0%;
+    }
+    p{
+        font-size: 76%;
+    }
+    .sponsor{
+        height: 366px;
+    }
 }
