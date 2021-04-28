@@ -122,7 +122,7 @@ var_dump(verification());
 
 
 <?php
-if (isset($_POST['inscription']) && verification() == true) {
+if (isset($_POST['inscription']) && empty(verification())) {
     inscription();
 }
 
