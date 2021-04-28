@@ -1,4 +1,9 @@
+<?php
+require("function.php");
+session_start();
+cookieUtilisateur();
 
+?>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -12,10 +17,12 @@
 </head>
 <body>
 <?php
-require("function.php");
-cookieUtilisateur();
+
+var_dump($_SESSION);
+var_dump(verification());
+
 ?>
-<div class="container"style="margin-top: 9%;">
+<div class="container" style="margin-top: 9%;">
     <div class="row">
         <div class="col-sm" style="margin-top: 9%;">
             <div class="container-sm border border-secondary">
@@ -30,7 +37,7 @@ cookieUtilisateur();
                         <input type="password" class="form-control" id=mdpInscription" placeholder="mot de passe"
                                name="mdp">
                         <?php
-                        if (verification() == "false") {
+                        if (verification() == false && isset($_POST['connexion'])) {
                             ?>
                             <p class="text-danger">email ou mot de passe incorecte</p>
                             <?php
@@ -39,19 +46,19 @@ cookieUtilisateur();
 
                     </div>
                     <button type="submit" class="btn btn-primary" value="connexion" name="connexion">Submit</button>
-
                 </form>
             </div>
         </div>
-        <div class="col-sm" >
+        <div class="col-sm">
             <div class="container-sm border border-secondary">
                 <form action="connexion.php" method="POST">
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
                         <input type="email" class="form-control" id="email"
+                               placeholder="jean@luc.fr"
                                aria-describedby="emailHelp" name="email">
                         <?php
-                        if (verification() == false) {
+                        if (verification() == "erreurEmail" && isset($_POST['inscription'])) {
                             ?>
                             <p class="text-danger">cette email existe deja</p>
                             <?php
@@ -63,7 +70,7 @@ cookieUtilisateur();
                         <input type="text" class="form-control" id="identifiant"
                                placeholder="identifiant" name="identifiant">
                         <?php
-                        if (verification() == "erreurPseudo") {
+                        if (verification() == "erreurPseudo" && isset($_POST['inscription'])) {
                             ?>
                             <p class="text-danger">ce pseudo existe deja</p>
                             <?php
@@ -80,7 +87,7 @@ cookieUtilisateur();
                         <input type="password" class="form-control" id="mdpConf"
                                placeholder="mot de passe" name="mdpconf">
                         <?php
-                        if (verification() == "erreurMdp") {
+                        if (verification() == "erreurMdp" && isset($_POST['inscription'])) {
                             ?>
                             <p class="text-danger">les mots de passe ne correspond pas</p>
                             <?php
@@ -89,7 +96,7 @@ cookieUtilisateur();
                     </div>
                     <div class="mb-3">
                         <select class="form-select" aria-label="Default select example" name="genre">
-                            <option selectionner un genre</option>
+                            <option>selectionner un genre</option>
                             <option value="homme">homme</option>
                             <option value="femme">femme</option>
                             <option value="mdr">mdr</option>
@@ -115,9 +122,10 @@ cookieUtilisateur();
 
 
 <?php
-if (isset($_POST['inscription']) && empty(verification())) {
+if (isset($_POST['inscription']) && verification() == true) {
     inscription();
 }
+
 ?>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"

@@ -8,26 +8,25 @@ function verification()
     $verif = $co->query("SELECT * FROM `utilisateurs` ");
     while ($donnees = $verif->fetch()) {
         if (isset($_POST['inscription'])) {
+            if ($_POST['mdp'] != $_POST['mdpconf']) {
+                return "erreurMdp";
+            }
             if ($donnees['pseudoUtilisateur'] == $_POST['identifiant']) {
                 return 'erreurPseudo';
             }
             if ($donnees['emailUtilisateur'] == $_POST['email']) {
                 return "erreurEmail";
             }
-            if ($_POST['mdp'] != $_POST['mdpconf']) {
-                return "erreurMdp";
-            }
+
         }
 
         if (isset($_POST['connexion'])) {
-            $erreur = true;
-            if ($donnees['emailUtilisateur'] != $_POST['email'] || $donnees['mot_de_passeUtilisateur'] != $_POST['mdp']) {
-                $erreur = false;
+            if ($donnees['emailUtilisateur'] == $_POST['email'] || $donnees['mot_de_passeUtilisateur'] == $_POST['mdp']) {
+                return true;
             }
             else {
-                $erreur = true;
+                return false;
             }
-            return $erreur;
         }
 
     }
@@ -67,7 +66,6 @@ function categorie()
         while ($donnees = $categorie->fetch()) {
             ?>
             <option value="<?php echo $donnees['idContact']; ?>"><?php echo $donnees['nomContact']; ?></option><?php
-
         }
         $categorie->closeCursor();
         ?>
@@ -99,17 +97,24 @@ function question()
     }
 }
 
-function cookieUtilisateur(){}
-if (isset($_POST['connexion']) && empty(verification())) {
-    $co = connexionBdd();
-    $session = $co->query("SELECT * FROM `utilisateurs`");
-    while ($donnees = $session->fetch()) {
-        if ($donnees['emailUtilisateur'] == $_POST['email']) {
-            setcookie('idUtilisateur',$donnees['idUtilisateurs']);
-            setcookie('pseudoUtilisateur',$donnees['pseudoUtilisateur']);
+function cookieUtilisateur(){
+
+    if (isset($_POST['connexion']) && verification() == true) {
+        $co = connexionBdd();
+        $session = $co->query("SELECT * FROM `utilisateurs`");
+        while ($donnees = $session->fetch()) {
+            if ($donnees['emailUtilisateur'] == $_POST['email']) {
+
+                $_SESSION['idUtilisateur'] = $donnees['idUtilisateurs'];
+                $_SESSION['pseudoUtilisateur'] = $donnees['pseudoUtilisateur'];
+            }
+
         }
+        $session->closeCursor();
+
     }
-    $session->closeCursor();
 }
+
+
 
 ?>
