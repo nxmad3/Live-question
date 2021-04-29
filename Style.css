@@ -1,0 +1,14 @@
+.all{
+    background-image: url(../Style/Fond-time.png);
+    text-align: center;
+    background-size: cover;
+    height: 100%;
+}
+.nindo{
+    padding-bottom: 10%;    
+    padding-top: 5%;
+}
+.card{
+    margin-left: 20%;
+    margin-right: 20%;
+}
