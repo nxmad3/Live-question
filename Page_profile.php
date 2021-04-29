@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Profile</title>
-	<link rel="stylesheet" type="text/css" href="Page_profile.css">
+	<link rel="stylesheet" type="text/css" href="Style.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" rel="stylesheet">
