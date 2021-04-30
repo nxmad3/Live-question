@@ -115,6 +115,11 @@ function creationSessionUtilisateur(){
     }
 }
 
-
+function login()
+{
+    if (isset($_POST['connexion']) && verification() == true) {
+        header('location:index-connexion.php');;
+    }
+}
 
 ?>

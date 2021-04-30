@@ -1,8 +1,9 @@
 <?php
 require("function.php");
-session_start();
-creationSessionUtilisateur();
+require("header.php");
 
+creationSessionUtilisateur();
+login();
 ?>
 <html>
 <head>
@@ -20,9 +21,7 @@ creationSessionUtilisateur();
     <div class="row">
         <div class="col-sm" style="margin-top: 9%;">
             <div class="container-sm border border-secondary">
-                <form action="<?php if (isset($_POST['connexion']) || verification() == true) {
-                    echo("./index-connexion.php");
-                }?>" method="POST">
+                <form action="connexion.php" method="POST">
                     <div class="mb-3">
                         <label for="emailInscription" class="form-label">Email address</label>
                         <input type="email" class="form-control" id="emailInscription" aria-describedby="emailHelp "
@@ -123,12 +122,7 @@ creationSessionUtilisateur();
 if (isset($_POST['inscription']) && empty(verification())) {
     inscription();
 }
-function profile()
-{
-    if (isset($_POST['connexion']) && verification() == true) {
-        return "./index-connexion.php";
-    }
-}
+
 
 ?>
 
