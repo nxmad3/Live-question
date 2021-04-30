@@ -1,0 +1,128 @@
+.all{
+    background-image: url(../Style/Fond-time.png);
+    text-align: center;
+    background-size: cover;
+    height: 100%;
+}
+.nindo{
+    padding-bottom: 10%;
+    padding-top: 8%;
+}
+.card{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.dropdown-menu{
+    text-align: center;
+}
+
+body {
+    margin: 0;
+}
+
+.nav-acceuil {
+    background-color: #1A2D34;
+}
+
+.btnPink {
+    background-color: #ED008C;
+    border-radius: 35px !important;
+}
+
+.acceuil {
+    background-color: #1A2D34;
+    height: 50ex;
+}
+
+.acceuil .description {
+    color: white;
+}
+
+.acceuil img {
+    width: 100%;
+}
+
+.acceuil .row {
+    padding-left: 17%;
+}
+
+.blocInfo {
+    margin: 8%;
+    height: 24ex;
+}
+
+.info {
+    float: left;
+    width: 32%;
+    padding-left: 3%;
+}
+.info2{
+    text-align: center;
+}
+
+.btnPink{
+    background-color: #ED008C !important;
+}
+
+.profileAcceuil{
+    width: 8%;
+    border-radius: 100%;
+}
+.video {
+    background-color: #1A2D34;
+    color: white;
+    height: 50ex;
+}
+
+.video h3 {
+    text-align: center;
+    padding-top: 10%;
+}
+
+.video img {
+    border-radius: 100%;
+    width: 3%;
+}
+
+.sponsor {
+    background-color: #D10171;
+    height: 500px;
+    text-align: center;
+    border-bottom-right-radius: 200% 75%;
+    border-bottom-left-radius: 200% 75%;
+
+}
+
+.sponsor img {
+    width: 15%;
+}
+
+.marque p {
+    margin-left: 5%;
+    margin-top: 3%;
+    background-color: white;
+    width: 19%;
+    float: left;
+}
+
+.respon_mar p {
+    margin-left: 5%;
+    margin-top: 3%;
+    background-color: white;
+    width: 19%;
+    float: left;
+}
+
+span.pseudo {
+    display: block;
+    font-weight: bold;
+}
+span.titreQuestion {
+    display: block;
+}
+span.nomCategorie {
+    display: block;
+}
+span.sujetQuestion {
+    display: block;
+}
