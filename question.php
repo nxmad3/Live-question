@@ -1,7 +1,7 @@
 <?php
 require("header.php");
 require("function.php");
-$titre ="question";
+$titre = "question";
 ?>
 <form action="question.php" method="POST">
     <div class="mb-3">
@@ -12,7 +12,7 @@ $titre ="question";
         <label for="sujetQuestion" class="form-label">sujet</label>
         <input type="text" class="form-control" id="sujetQuestion" name="sujetQuestion">
     </div>
-    <?php echo(categorie())?>
+    <?php echo(categorie()) ?>
     <button type="submit" class="btn btn-primary" name="question">envoyer</button>
 </form>
 <?php

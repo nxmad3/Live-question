@@ -1,5 +1,5 @@
 .all{
-    background-image: url(../Style/Fond-time.png);
+    background-image: url(./images/Fond-time.png);
     text-align: center;
     background-size: cover;
     height: 100%;
@@ -59,7 +59,10 @@ body {
 .info2{
     text-align: center;
 }
-
+#navbarNavDropdown {
+    display: block !important;
+    float: right;
+}
 .btnPink{
     background-color: #ED008C !important;
 }
@@ -125,4 +128,68 @@ span.nomCategorie {
 }
 span.sujetQuestion {
     display: block;
+}
+
+.faq {
+    margin: auto;
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+.ask {
+    margin: auto;
+    font-family: sans-serif;
+}
+
+.blockfaq {
+    text-align: center;
+}
+
+.footer {
+    background-color: #1a2d34;
+    width: 100%;
+    padding-bottom: 10px;
+    height: 200px;
+}
+
+.footer img{
+    float: right;
+    padding-right: 100px;
+    padding-top: 120px;
+}
+.infooter {
+    font-family: sans-serif;
+    font-size: 12px;
+    border-top: solid #8a8a90;
+}
+.footer p {
+    padding-top: 110px;
+    color: #8a8a90;
+    font-family: sans-serif;
+    font-size: 12px;
+    float: left;
+    padding-left: 100px;
+}
+
+.footer hr {
+    border-top: solid 1px gray;
+    padding-top: 120px;
+}
+
+.vale {
+    width: 100%;
+    height: 50px;
+    background: white;
+    border-bottom-right-radius: 50% 100%;
+    border-bottom-left-radius: 50% 100%;
+    float: left;
+}
+
+.ques {
+    margin: auto;
+    font-family: sans-serif;
+    background-color: #f8f9fd;
+    width: 370px;
+    height: 30px;
+    padding-top: 15px;
 }

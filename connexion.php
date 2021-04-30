@@ -28,7 +28,7 @@ login();
                         }
                         ?>
                     </div>
-                    <button  type="submit " class="btn btn-primary" value="connexion"
+                    <button type="submit " class="btn btn-primary" value="connexion"
                             name="connexion">Submit
                     </button>
 

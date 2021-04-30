@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet">
+    <link href="Style.css" rel="stylesheet">
     <title>acceuil</title>
 </head>
 <body>
@@ -64,7 +64,7 @@
                         <li><a class="dropdown-item text-light" href="#">Something else here</a></li>
                     </ul>
                 </li>
-                <button class="btnPink text-light">Se connecter</button>
+                <a type="button" href="connexion.php" class="btnPink text-light">Se connecter</a>
             </ul>
         </div>
     </div>
@@ -304,84 +304,84 @@
         </div>
     </div>
 </div>
-    <div class="video">
-        <h3><img src="./images/iplay.png" align="middle">"Nulla venenatis magna fringilla"</h3>
+<div class="video">
+    <h3><img src="./images/iplay.png" align="middle">"Nulla venenatis magna fringilla"</h3>
+</div>
+<div class="sponsor">
+    <h2>Etiam laot, alique sceleris.</h2>
+    <p>Sed ut perspiciatis undo omnis iste nastus error sit voluptatem<br>
+        ascusantium doloremque laudantium, totam rem aperiam, esque ipsa.</p>
+    <div class="marque">
+        <p><img src="./images/marque1.jpg"> Kyan Boards</p>
+        <p><img src="./images/marque2.jpg"> Atica</p>
+        <p><img src="./images/marque3.jpg"> Treva</p>
+        <p><img src="./images/marque4.jpg"> Kamba</p>
+        <p><img src="./images/marque5.jpg"> Tvit Forms</p>
+        <p><img src="./images/marque6.jpg"> Aven</p>
+        <div class="respon_mar">
+            <p><img src="./images/marque7.jpg"> Utosia</p>
+        </div>
     </div>
-    <div class="sponsor">
-        <h2>Etiam laot, alique sceleris.</h2>
-        <p>Sed ut perspiciatis undo omnis iste nastus error sit voluptatem<br>
-            ascusantium doloremque laudantium, totam rem aperiam, esque ipsa.</p>
-        <div class="marque">
-            <p><img src="./images/marque1.jpg"> Kyan Boards</p>
-            <p><img src="./images/marque2.jpg"> Atica</p>
-            <p><img src="./images/marque3.jpg"> Treva</p>
-            <p><img src="./images/marque4.jpg"> Kamba</p>
-            <p><img src="./images/marque5.jpg"> Tvit Forms</p>
-            <p><img src="./images/marque6.jpg"> Aven</p>
-            <div class="respon_mar">
-                <p><img src="./images/marque7.jpg"> Utosia</p>
+</div>
+<div class="blockfaq">
+    <div class="faq">
+        <p>FAQ</p>
+    </div>
+    <div class="ask">
+        <p>Sed ut percepeciatis unde omnis iste natus error sit voluptatem <br/>
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+    </div>
+    <ul>
+        <li>
+            <button class="collapsible">Can i upgrade later on?</button>
+            <div class="content">
+                <p>Yes you can.</p>
             </div>
-        </div>
+        </li>
+        <li>
+            <button class="collapsible">Can i port my data from another provider?</button>
+            <div class="content">
+                <p>Yes you can.</p>
+            </div>
+        </li>
+        <li>
+            <button class="collapsible">Are my food photos stored forever in the cloud</button>
+            <div class="content">
+                <p>Lmao no it's not possible you dumb.</p>
+            </div>
+        </li>
+        <li>
+            <button class="collapsible">Who foots the bill for that?</button>
+            <div class="content">
+                <p>Yo mama aahahah.</p>
+            </div>
+        </li>
+        <li>
+            <button class="collapsible">What's the real cost?</button>
+            <div class="content">
+                <p>21 you stupid.</p>
+            </div>
+        </li>
+        <li>
+            <button class="collapsible">Can my company request a custom plan?</button>
+            <div class="content">
+                <p>My man that's why you are here for.</p>
+            </div>
+        </li>
+    </ul>
+    <div class="ques"
+    <p>Still have unanswered questions? <span style="color:rgba(209,1,113,255)">Get in touch</span></p>
+</div>
+<div class="footer">
+    <div class="vale">
     </div>
-    <div class="blockfaq">
-        <div class="faq">
-            <p>FAQ</p>
-        </div>
-        <div class="ask">
-            <p>Sed ut percepeciatis unde omnis iste natus error sit voluptatem <br/>
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
-        </div>
-        <ul>
-            <li>
-                <button class="collapsible">Can i upgrade later on?</button>
-                <div class="content">
-                    <p>Yes you can.</p>
-                </div>
-            </li>
-            <li>
-                <button class="collapsible">Can i port my data from another provider?</button>
-                <div class="content">
-                    <p>Yes you can.</p>
-                </div>
-            </li>
-            <li>
-                <button class="collapsible">Are my food photos stored forever in the cloud</button>
-                <div class="content">
-                    <p>Lmao no it's not possible you dumb.</p>
-                </div>
-            </li>
-            <li>
-                <button class="collapsible">Who foots the bill for that?</button>
-                <div class="content">
-                    <p>Yo mama aahahah.</p>
-                </div>
-            </li>
-            <li>
-                <button class="collapsible">What's the real cost?</button>
-                <div class="content">
-                    <p>21 you stupid.</p>
-                </div>
-            </li>
-            <li>
-                <button class="collapsible">Can my company request a custom plan?</button>
-                <div class="content">
-                    <p>My man that's why you are here for.</p>
-                </div>
-            </li>
-        </ul>
-        <div class="ques"
-        <p>Still have unanswered questions? <span style="color:rgba(209,1,113,255)">Get in touch</span></p>
+    <div class="infooter">
+        <p>©2019 Page protected by reCAPTCHA and subject to Google's <span style="color: white; font-weight: bold"> Privacy policy </span>
+            and
+            <span style="color: white; font-weight: bold"> Term of Services </span></p>
+        <img src="./images/links.jpg">
     </div>
-    <div class="footer">
-        <div class="vale">
-        </div>
-        <div class="infooter">
-            <p>©2019 Page protected by reCAPTCHA and subject to Google's <span style="color: white; font-weight: bold"> Privacy policy </span>
-                and
-                <span style="color: white; font-weight: bold"> Term of Services </span></p>
-            <img src="links.jpg">
-        </div>
-    </div>
+</div>
 </div>
 <script>
     var coll = document.getElementsByClassName("collapsible");
