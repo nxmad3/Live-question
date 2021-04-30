@@ -14,7 +14,7 @@ session_start();
     <script type="text/javascript" src="script/indexJS.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>question</title>
+    <title><?php $titre ?></title>
 </head>
 <body>
 <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">

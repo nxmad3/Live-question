@@ -1,4 +1,5 @@
 <?php
+$titre = "profile";
     require("header.php");
 ?>
 <div class="row py-5 px-4">

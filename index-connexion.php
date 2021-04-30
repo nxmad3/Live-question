@@ -1,4 +1,5 @@
 <?php
+$titre ="acceuil";
 require("header.php");
 ?>
 <div class="all">

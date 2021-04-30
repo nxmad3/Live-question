@@ -1,6 +1,7 @@
 <?php
 require("header.php");
 require("function.php");
+$titre ="question";
 ?>
 <form action="question.php" method="POST">
     <div class="mb-3">
