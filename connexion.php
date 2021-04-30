@@ -1,7 +1,7 @@
 <?php
 require("function.php");
 session_start();
-cookieUtilisateur();
+creationSessionUtilisateur();
 
 ?>
 <html>
@@ -16,17 +16,13 @@ cookieUtilisateur();
     <title>connexion</title>
 </head>
 <body>
-<?php
-
-var_dump($_SESSION);
-var_dump(verification());
-
-?>
 <div class="container" style="margin-top: 9%;">
     <div class="row">
         <div class="col-sm" style="margin-top: 9%;">
             <div class="container-sm border border-secondary">
-                <form action="connexion.php" method="POST">
+                <form action="<?php if (isset($_POST['connexion']) || verification() == true) {
+                    echo("./index-connexion.php");
+                }?>" method="POST">
                     <div class="mb-3">
                         <label for="emailInscription" class="form-label">Email address</label>
                         <input type="email" class="form-control" id="emailInscription" aria-describedby="emailHelp "
@@ -43,9 +39,11 @@ var_dump(verification());
                             <?php
                         }
                         ?>
-
                     </div>
-                    <button type="submit" class="btn btn-primary" value="connexion" name="connexion">Submit</button>
+                    <button  type="submit " class="btn btn-primary" value="connexion"
+                            name="connexion">Submit
+                    </button>
+
                 </form>
             </div>
         </div>
@@ -124,6 +122,12 @@ var_dump(verification());
 <?php
 if (isset($_POST['inscription']) && empty(verification())) {
     inscription();
+}
+function profile()
+{
+    if (isset($_POST['connexion']) && verification() == true) {
+        return "./index-connexion.php";
+    }
 }
 
 ?>

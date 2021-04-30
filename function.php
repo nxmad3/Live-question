@@ -65,7 +65,7 @@ function categorie()
         <?php
         while ($donnees = $categorie->fetch()) {
             ?>
-            <option value="<?php echo $donnees['idContact']; ?>"><?php echo $donnees['nomContact']; ?></option><?php
+            <option value="<?php echo $donnees['idCategorie']; ?>"><?php echo $donnees['nomCategorie']; ?></option><?php
         }
         $categorie->closeCursor();
         ?>
@@ -80,7 +80,7 @@ function question()
         $titre = $_POST['titreQuestion'];
         $sujet = $_POST['sujetQuestion'];
         $categorie = $_POST['categorie'];
-        $auteur = $_COOKIE['idUtilisateur'];
+        $auteur = $_SESSION['idUtilisateur'];
         $date = date("Y-m-d");
 
         $query = $co->prepare("INSERT INTO `question`(`titreQuestion`,`auteur_idQustion`, `cat_idQuestion`, `sujetQuestion`, `date_creaQuestion`) VALUES (:titre,:auteur ,:categorie,:sujet,:dateQuestion)");
@@ -97,7 +97,7 @@ function question()
     }
 }
 
-function cookieUtilisateur(){
+function creationSessionUtilisateur(){
 
     if (isset($_POST['connexion']) && verification() == true) {
         $co = connexionBdd();
