@@ -21,7 +21,7 @@ function verification()
         }
 
         if (isset($_POST['connexion'])) {
-            if ($donnees['emailUtilisateur'] == $_POST['email'] || $donnees['mot_de_passeUtilisateur'] == $_POST['mdp']) {
+            if ($donnees['emailUtilisateur'] == $_POST['email'] && $donnees['mot_de_passeUtilisateur'] == $_POST['mdp']) {
                 return true;
             }
             else {
@@ -107,6 +107,8 @@ function creationSessionUtilisateur(){
 
                 $_SESSION['idUtilisateur'] = $donnees['idUtilisateurs'];
                 $_SESSION['pseudoUtilisateur'] = $donnees['pseudoUtilisateur'];
+                $_SESSION['roleUtilisateur'] = $donnees['roleUtilisateur'];
+
             }
 
         }
@@ -123,6 +125,20 @@ function login()
 }
 
 
+function suppresion(){
+    $co = connexionBdd();
 
+    if($_SESSION['roleUtilisateur'] == 1 && isset($_POST['suppresionQuestion'])){
+        $questionId = $_POST['idQuestion'];
+        $query = $co->prepare("DELETE FROM `question` WHERE `idQuestion` = :question_idReponse");
+        $query->bindParam(':question_idReponse', $questionId);
+    }
+    if($_SESSION['roleUtilisateur'] == 1 && isset($_POST['suppresionUtilisateur'])){
+        $idUtilisateur = $_SESSION['idUtilisateur'];
+        $query = $co->prepare("DELETE FROM `utilisateurs` WHERE `utilisateurs`.`idUtilisateurs`= " . $idUtilisateur);
+        $query->bindParam(':idUtilisateur', $idUtilisateur);
+    }
+
+}
 ?>
 
