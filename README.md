@@ -10,7 +10,9 @@ base de donnée test avec quelque utilisateurs pour tester l'affichage de questi
 contexte : projet de fin d'année, site faq 
 
 repartition des taches : Kyllian session id, les fonctions et la page connexion/inscription
+
                          Enzo page profil
+                         
                          Theo page question
 
 
